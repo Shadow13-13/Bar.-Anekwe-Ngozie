@@ -1,0 +1,1659 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Bar. Anekwe Ngozie — Corporate & General Legal Practitioner in Onitsha, Anambra. 15+ years of expert legal services across all major branches of Nigerian law." />
+  <meta name="keywords" content="lawyer Onitsha, legal services Anambra, corporate lawyer Nigeria, Bar Anekwe Ngozie, Nigerian lawyer" />
+  <meta name="robots" content="index, follow" />
+  <title>Bar. Anekwe Ngozie — Legal Practitioner, Onitsha</title>
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Bar. Anekwe Ngozie — Legal Practitioner" />
+  <meta property="og:description" content="15+ years of expert legal counsel in Onitsha, Anambra, Nigeria." />
+  <meta property="og:type" content="website" />
+
+  <!-- Schema -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "LegalService",
+    "name": "Bar. Anekwe Ngozie — Legal Practitioner",
+    "description": "Corporate and general legal services across all major branches of Nigerian law.",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Onitsha",
+      "addressRegion": "Anambra",
+      "addressCountry": "NG"
+    },
+    "telephone": "+234-800-000-0000",
+    "openingHoursSpecification": {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"],
+      "opens": "09:00",
+      "closes": "17:00"
+    }
+  }
+  </script>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garant:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=Jost:wght@300;400;500&display=swap" rel="stylesheet" />
+
+  <style>
+    /* ===== TOKENS ===== */
+    :root {
+      --cream:    #F7F3EE;
+      --paper:    #EFEBE4;
+      --ink:      #0E1A27;
+      --ink-mid:  #3A4A5A;
+      --gold:     #B8922A;
+      --gold-lt:  #D4A843;
+      --rule:     rgba(184,146,42,.25);
+      --white:    #FFFFFF;
+      --serif:    'Cormorant Garant', Georgia, serif;
+      --sans:     'Jost', sans-serif;
+      --radius:   2px;
+      --speed:    .35s;
+    }
+
+    /* ===== RESET ===== */
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+    body {
+      background: var(--cream);
+      color: var(--ink);
+      font-family: var(--sans);
+      font-weight: 300;
+      font-size: 16px;
+      line-height: 1.75;
+      overflow-x: hidden;
+    }
+    img { display: block; max-width: 100%; }
+    a { color: inherit; text-decoration: none; }
+    button { font-family: var(--sans); cursor: pointer; }
+    ul { list-style: none; }
+
+    /* ===== UTILITY ===== */
+    .container { max-width: 1080px; margin: 0 auto; padding: 0 2rem; }
+    .serif      { font-family: var(--serif); }
+    .gold       { color: var(--gold); }
+    .rule       { border: none; border-top: 1px solid var(--rule); margin: 0; }
+    .sr-only    { position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0,0,0,0); }
+
+    /* ===== PAGE SYSTEM ===== */
+    .page { display: none; animation: fadeIn .4s ease; }
+    .page.active { display: block; }
+    @keyframes fadeIn { from { opacity:0; transform:translateY(8px); } to { opacity:1; transform:translateY(0); } }
+
+    /* ===== NAV ===== */
+    header {
+      position: sticky; top: 0; z-index: 100;
+      background: var(--cream);
+      border-bottom: 1px solid var(--rule);
+    }
+    .nav-inner {
+      display: flex; align-items: center; justify-content: space-between;
+      height: 70px;
+    }
+    .nav-logo {
+      font-family: var(--serif);
+      font-size: 1.1rem;
+      font-weight: 500;
+      letter-spacing: .03em;
+      line-height: 1.2;
+    }
+    .nav-logo span { display: block; font-size: .65rem; font-family: var(--sans); font-weight: 400; letter-spacing: .18em; text-transform: uppercase; color: var(--gold); margin-top: 2px; }
+    nav ul { display: flex; gap: 2rem; }
+    nav a {
+      font-size: .78rem;
+      letter-spacing: .14em;
+      text-transform: uppercase;
+      color: var(--ink-mid);
+      transition: color var(--speed);
+      position: relative;
+      padding-bottom: 2px;
+    }
+    nav a::after {
+      content: '';
+      position: absolute; bottom: -2px; left: 0; right: 0; height: 1px;
+      background: var(--gold);
+      transform: scaleX(0); transform-origin: left;
+      transition: transform var(--speed);
+    }
+    nav a:hover, nav a.active { color: var(--ink); }
+    nav a:hover::after, nav a.active::after { transform: scaleX(1); }
+
+    /* Hamburger */
+    .hamburger { display: none; flex-direction: column; gap: 5px; background: none; border: none; padding: 4px; }
+    .hamburger span { display: block; width: 22px; height: 1.5px; background: var(--ink); transition: all var(--speed); }
+    .hamburger.open span:nth-child(1) { transform: translateY(6.5px) rotate(45deg); }
+    .hamburger.open span:nth-child(2) { opacity: 0; }
+    .hamburger.open span:nth-child(3) { transform: translateY(-6.5px) rotate(-45deg); }
+    .mobile-nav { display: none; background: var(--cream); border-top: 1px solid var(--rule); padding: 1.5rem 2rem; }
+    .mobile-nav.open { display: block; }
+    .mobile-nav ul { display: flex; flex-direction: column; gap: 1.2rem; }
+    .mobile-nav a { font-size: .85rem; letter-spacing: .12em; text-transform: uppercase; color: var(--ink-mid); }
+
+    /* ===== HERO ===== */
+    .hero {
+      min-height: 88vh;
+      display: flex; align-items: center;
+      position: relative;
+      overflow: hidden;
+    }
+    .hero-bg {
+      position: absolute; inset: 0;
+      background: linear-gradient(135deg, #0E1A27 0%, #1A2E42 60%, #0E1A27 100%);
+      z-index: 0;
+    }
+    .hero-grain {
+      position: absolute; inset: 0; z-index: 1;
+      background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='.07'/%3E%3C/svg%3E");
+      background-size: 200px;
+      opacity: .5;
+    }
+    .hero-rule {
+      position: absolute; top: 0; bottom: 0; left: 50%; width: 1px;
+      background: rgba(184,146,42,.12); z-index: 1;
+    }
+    .hero-content {
+      position: relative; z-index: 2;
+      padding: 6rem 0;
+      max-width: 680px;
+    }
+    .hero-eyebrow {
+      font-size: .72rem; letter-spacing: .22em; text-transform: uppercase;
+      color: var(--gold-lt); margin-bottom: 1.6rem;
+      display: flex; align-items: center; gap: 1rem;
+    }
+    .hero-eyebrow::after { content: ''; flex: 1; max-width: 60px; height: 1px; background: var(--gold); }
+    .hero h1 {
+      font-family: var(--serif);
+      font-size: clamp(2.8rem, 6vw, 4.8rem);
+      font-weight: 300;
+      line-height: 1.1;
+      color: var(--white);
+      margin-bottom: 1.5rem;
+    }
+    .hero h1 em { font-style: italic; color: var(--gold-lt); }
+    .hero p {
+      font-size: 1rem;
+      color: rgba(255,255,255,.65);
+      max-width: 500px;
+      margin-bottom: 2.5rem;
+      line-height: 1.8;
+    }
+    .hero-cta { display: flex; gap: 1rem; flex-wrap: wrap; }
+    .btn-primary {
+      display: inline-flex; align-items: center; gap: .6rem;
+      padding: .85rem 2rem;
+      background: var(--gold);
+      color: var(--white);
+      font-size: .78rem; letter-spacing: .14em; text-transform: uppercase;
+      border: none; border-radius: var(--radius);
+      transition: background var(--speed), transform var(--speed);
+    }
+    .btn-primary:hover { background: var(--gold-lt); transform: translateY(-1px); }
+    .btn-ghost {
+      display: inline-flex; align-items: center; gap: .6rem;
+      padding: .85rem 2rem;
+      background: transparent;
+      color: rgba(255,255,255,.8);
+      font-size: .78rem; letter-spacing: .14em; text-transform: uppercase;
+      border: 1px solid rgba(255,255,255,.25); border-radius: var(--radius);
+      transition: border-color var(--speed), color var(--speed);
+    }
+    .btn-ghost:hover { border-color: var(--gold); color: var(--gold-lt); }
+    .hero-stats {
+      position: absolute; bottom: 2.5rem; right: 0; z-index: 2;
+      display: flex; gap: 3rem;
+    }
+    .stat { text-align: right; }
+    .stat-num { font-family: var(--serif); font-size: 2.4rem; color: var(--white); line-height: 1; }
+    .stat-label { font-size: .65rem; letter-spacing: .16em; text-transform: uppercase; color: rgba(255,255,255,.45); margin-top: .2rem; }
+
+    /* ===== SECTION PATTERNS ===== */
+    section { padding: 5rem 0; }
+    .section-label {
+      font-size: .68rem; letter-spacing: .22em; text-transform: uppercase;
+      color: var(--gold); margin-bottom: 1rem;
+      display: flex; align-items: center; gap: .8rem;
+    }
+    .section-label::before { content: ''; width: 28px; height: 1px; background: var(--gold); }
+    h2 {
+      font-family: var(--serif);
+      font-size: clamp(2rem, 4vw, 3rem);
+      font-weight: 400;
+      line-height: 1.2;
+      margin-bottom: 1.5rem;
+    }
+    h3 { font-family: var(--serif); font-weight: 500; }
+    p.lead { font-size: 1.05rem; color: var(--ink-mid); max-width: 580px; }
+
+    /* ===== ABOUT STRIP (Home) ===== */
+    .about-strip {
+      background: var(--ink);
+      color: var(--white);
+      padding: 5rem 0;
+    }
+    .about-strip-inner { display: grid; grid-template-columns: 1fr 1fr; gap: 5rem; align-items: center; }
+    .about-strip h2 { color: var(--white); }
+    .about-strip p { color: rgba(255,255,255,.65); }
+    .about-strip .section-label { color: var(--gold-lt); }
+    .about-strip .section-label::before { background: var(--gold-lt); }
+    .about-photo {
+      position: relative;
+      aspect-ratio: 3/4;
+      background: #1A2E42;
+      overflow: hidden;
+    }
+    .about-photo-placeholder {
+      position: absolute; inset: 0;
+      display: flex; flex-direction: column; align-items: center; justify-content: center;
+      color: rgba(255,255,255,.2);
+      font-size: .75rem; letter-spacing: .1em; text-transform: uppercase;
+      gap: .5rem;
+    }
+    .about-photo-placeholder svg { opacity: .15; }
+    .about-photo::after {
+      content: '';
+      position: absolute; bottom: 0; left: 0; right: 0; height: 4px;
+      background: var(--gold);
+    }
+    .about-creds { margin-top: 2rem; display: flex; flex-direction: column; gap: .6rem; }
+    .cred { display: flex; align-items: baseline; gap: 1rem; }
+    .cred-dot { width: 4px; height: 4px; border-radius: 50%; background: var(--gold); flex-shrink: 0; margin-top: .6rem; }
+    .cred-text { font-size: .88rem; color: rgba(255,255,255,.55); }
+
+    /* ===== PRACTICE GRID ===== */
+    .practice-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1px; background: var(--rule); border: 1px solid var(--rule); margin-top: 3rem; }
+    .practice-card {
+      background: var(--cream);
+      padding: 2.2rem;
+      transition: background var(--speed);
+      cursor: pointer;
+    }
+    .practice-card:hover { background: var(--paper); }
+    .practice-icon { font-size: 1.4rem; margin-bottom: 1rem; }
+    .practice-card h3 { font-size: 1.15rem; margin-bottom: .6rem; }
+    .practice-card p { font-size: .85rem; color: var(--ink-mid); line-height: 1.65; }
+    .practice-link {
+      display: inline-flex; align-items: center; gap: .4rem;
+      margin-top: 1rem; font-size: .72rem; letter-spacing: .12em; text-transform: uppercase;
+      color: var(--gold); transition: gap var(--speed);
+    }
+    .practice-link:hover { gap: .7rem; }
+
+    /* ===== BLOG CARDS ===== */
+    .blog-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 2rem; margin-top: 3rem; }
+    .blog-card {
+      border: 1px solid var(--rule);
+      padding: 2rem;
+      cursor: pointer;
+      transition: border-color var(--speed), transform var(--speed);
+      background: var(--white);
+    }
+    .blog-card:hover { border-color: var(--gold); transform: translateY(-3px); }
+    .blog-tag { font-size: .65rem; letter-spacing: .16em; text-transform: uppercase; color: var(--gold); margin-bottom: .8rem; }
+    .blog-card h3 { font-family: var(--serif); font-size: 1.25rem; font-weight: 500; line-height: 1.3; margin-bottom: .8rem; }
+    .blog-card p { font-size: .875rem; color: var(--ink-mid); line-height: 1.7; }
+    .blog-meta { margin-top: 1.2rem; font-size: .72rem; letter-spacing: .08em; color: var(--ink-mid); display: flex; justify-content: space-between; align-items: center; }
+    .read-more { color: var(--gold); font-size: .72rem; letter-spacing: .12em; text-transform: uppercase; }
+
+    /* ===== TESTIMONIALS ===== */
+    .testimonials-bg { background: var(--paper); }
+    .testimonials-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.5rem; margin-top: 3rem; }
+    .testimonial-card {
+      background: var(--white);
+      padding: 2rem;
+      border-left: 3px solid transparent;
+      transition: border-color var(--speed), transform var(--speed);
+    }
+    .testimonial-card:hover { border-left-color: var(--gold); transform: translateY(-2px); }
+    .testimonial-quote { font-family: var(--serif); font-size: 1.1rem; font-style: italic; line-height: 1.6; margin-bottom: 1.2rem; color: var(--ink); }
+    .testimonial-author { font-size: .75rem; letter-spacing: .1em; text-transform: uppercase; color: var(--gold); }
+    .testimonial-org { font-size: .78rem; color: var(--ink-mid); margin-top: .2rem; }
+
+    /* ===== NEWSLETTER ===== */
+    .newsletter-section {
+      background: var(--ink);
+      color: var(--white);
+      padding: 5rem 0;
+    }
+    .newsletter-inner { max-width: 620px; margin: 0 auto; text-align: center; }
+    .newsletter-inner h2 { color: var(--white); margin-bottom: 1rem; }
+    .newsletter-inner p { color: rgba(255,255,255,.6); margin-bottom: 2rem; }
+    .newsletter-tags { display: flex; flex-wrap: wrap; justify-content: center; gap: .6rem; margin-bottom: 2.5rem; }
+    .newsletter-tag {
+      font-size: .7rem; letter-spacing: .12em; text-transform: uppercase;
+      padding: .4rem .9rem;
+      border: 1px solid rgba(184,146,42,.35);
+      color: var(--gold-lt);
+      border-radius: 20px;
+    }
+    .newsletter-form { display: flex; gap: 0; max-width: 460px; margin: 0 auto; }
+    .newsletter-form input {
+      flex: 1; padding: .9rem 1.2rem;
+      background: rgba(255,255,255,.08);
+      border: 1px solid rgba(255,255,255,.15);
+      border-right: none;
+      color: var(--white);
+      font-family: var(--sans);
+      font-size: .88rem;
+      outline: none;
+    }
+    .newsletter-form input::placeholder { color: rgba(255,255,255,.35); }
+    .newsletter-form input:focus { border-color: var(--gold); }
+    .newsletter-form button {
+      padding: .9rem 1.5rem;
+      background: var(--gold);
+      color: var(--white);
+      border: none;
+      font-size: .75rem; letter-spacing: .14em; text-transform: uppercase;
+      cursor: pointer;
+      transition: background var(--speed);
+      white-space: nowrap;
+    }
+    .newsletter-form button:hover { background: var(--gold-lt); }
+
+    /* ===== CONTACT ===== */
+    .contact-grid { display: grid; grid-template-columns: 1fr 1.4fr; gap: 5rem; align-items: start; margin-top: 3rem; }
+    .contact-info-block { }
+    .contact-item { margin-bottom: 2rem; }
+    .contact-item-label { font-size: .68rem; letter-spacing: .18em; text-transform: uppercase; color: var(--gold); margin-bottom: .4rem; }
+    .contact-item-val { font-size: .95rem; color: var(--ink-mid); line-height: 1.6; }
+    .contact-item-val a:hover { color: var(--gold); }
+    .social-row { display: flex; gap: .8rem; margin-top: 2rem; }
+    .social-btn {
+      width: 40px; height: 40px; border-radius: 50%;
+      border: 1px solid var(--rule);
+      display: flex; align-items: center; justify-content: center;
+      background: transparent;
+      transition: all var(--speed);
+      color: var(--ink-mid);
+    }
+    .social-btn:hover { background: var(--ink); color: var(--white); border-color: var(--ink); }
+    .contact-form {}
+    .form-group { margin-bottom: 1.4rem; }
+    .form-group label { display: block; font-size: .72rem; letter-spacing: .14em; text-transform: uppercase; color: var(--ink-mid); margin-bottom: .5rem; }
+    .form-group input,
+    .form-group select,
+    .form-group textarea {
+      width: 100%; padding: .85rem 1rem;
+      border: 1px solid var(--rule);
+      background: var(--white);
+      font-family: var(--sans); font-size: .9rem;
+      color: var(--ink);
+      outline: none;
+      border-radius: var(--radius);
+      transition: border-color var(--speed);
+      appearance: none;
+    }
+    .form-group input:focus,
+    .form-group select:focus,
+    .form-group textarea:focus { border-color: var(--gold); }
+    .form-group textarea { resize: vertical; min-height: 130px; }
+    .form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; }
+    .form-submit {
+      display: inline-flex; align-items: center; gap: .6rem;
+      padding: .9rem 2.2rem;
+      background: var(--ink); color: var(--white);
+      border: none; border-radius: var(--radius);
+      font-size: .78rem; letter-spacing: .14em; text-transform: uppercase;
+      cursor: pointer; transition: background var(--speed);
+    }
+    .form-submit:hover { background: var(--gold); }
+    .form-note { font-size: .75rem; color: var(--ink-mid); margin-top: .6rem; }
+
+    /* ===== ABOUT PAGE ===== */
+    .about-hero { background: var(--ink); color: var(--white); padding: 6rem 0 4rem; }
+    .about-hero h1 { font-family: var(--serif); font-size: clamp(2.2rem, 5vw, 3.8rem); font-weight: 300; color: var(--white); margin-bottom: 1rem; }
+    .about-hero p { color: rgba(255,255,255,.6); max-width: 520px; }
+    .about-body { display: grid; grid-template-columns: 1fr 2fr; gap: 4rem; align-items: start; padding: 4rem 0; }
+    .about-sidebar { position: sticky; top: 90px; }
+    .about-photo-lg {
+      aspect-ratio: 3/4;
+      background: var(--paper);
+      overflow: hidden; position: relative;
+      margin-bottom: 1.5rem;
+    }
+    .about-photo-lg::after { content: ''; position: absolute; bottom: 0; left: 0; right: 0; height: 3px; background: var(--gold); }
+    .about-photo-lg-placeholder {
+      position: absolute; inset: 0;
+      display: flex; flex-direction: column; align-items: center; justify-content: center;
+      color: var(--ink-mid); opacity: .3; gap: .5rem;
+      font-size: .72rem; letter-spacing: .1em; text-transform: uppercase;
+    }
+    .about-cred-list { margin-top: 1rem; }
+    .about-cred-item { padding: .8rem 0; border-bottom: 1px solid var(--rule); font-size: .82rem; color: var(--ink-mid); }
+    .about-cred-item strong { display: block; font-weight: 500; color: var(--ink); font-size: .8rem; letter-spacing: .06em; }
+    .about-main h2 { margin-bottom: 1.2rem; }
+    .about-main p { color: var(--ink-mid); margin-bottom: 1.2rem; line-height: 1.8; }
+    .philosophy-block {
+      background: var(--ink); color: var(--white);
+      padding: 2.5rem; margin: 3rem 0; position: relative;
+    }
+    .philosophy-block::before {
+      content: '\201C';
+      position: absolute; top: -.5rem; left: 1.5rem;
+      font-family: var(--serif); font-size: 6rem; color: var(--gold); opacity: .3; line-height: 1;
+    }
+    .philosophy-block p { font-family: var(--serif); font-size: 1.2rem; font-style: italic; color: rgba(255,255,255,.85); position: relative; z-index: 1; }
+
+    /* ===== FOOTER ===== */
+    footer {
+      background: var(--ink);
+      color: rgba(255,255,255,.5);
+      padding: 3.5rem 0 2rem;
+    }
+    .footer-inner { display: grid; grid-template-columns: 1.5fr 1fr 1fr; gap: 3rem; padding-bottom: 2.5rem; }
+    .footer-brand { }
+    .footer-logo { font-family: var(--serif); font-size: 1.15rem; color: var(--white); margin-bottom: .5rem; }
+    .footer-logo span { display: block; font-family: var(--sans); font-size: .6rem; letter-spacing: .18em; text-transform: uppercase; color: var(--gold); margin-top: 3px; }
+    .footer-desc { font-size: .82rem; line-height: 1.7; margin-top: 1rem; }
+    .footer-col h4 { font-family: var(--sans); font-size: .65rem; letter-spacing: .18em; text-transform: uppercase; color: var(--gold); margin-bottom: 1rem; }
+    .footer-col ul { display: flex; flex-direction: column; gap: .55rem; }
+    .footer-col a { font-size: .82rem; color: rgba(255,255,255,.45); transition: color var(--speed); }
+    .footer-col a:hover { color: var(--white); }
+    .footer-bottom {
+      border-top: 1px solid rgba(255,255,255,.08);
+      padding-top: 1.5rem;
+      display: flex; justify-content: space-between; align-items: center;
+      font-size: .72rem;
+    }
+    .footer-bottom a:hover { color: var(--white); }
+
+    /* ===== ARTICLE VIEW ===== */
+    .article-header { background: var(--ink); padding: 5rem 0 3rem; color: var(--white); }
+    .article-header .section-label { color: var(--gold-lt); }
+    .article-header .section-label::before { background: var(--gold-lt); }
+    .article-header h1 { font-family: var(--serif); font-size: clamp(1.8rem, 4vw, 3rem); font-weight: 400; color: var(--white); margin-bottom: 1rem; }
+    .article-header p { color: rgba(255,255,255,.55); font-size: .85rem; }
+    .article-body { max-width: 680px; margin: 4rem auto; padding: 0 2rem; }
+    .article-body h2 { font-family: var(--serif); font-size: 1.5rem; margin: 2.5rem 0 .8rem; }
+    .article-body h3 { font-family: var(--serif); font-size: 1.15rem; margin: 2rem 0 .6rem; }
+    .article-body p { color: var(--ink-mid); margin-bottom: 1.2rem; line-height: 1.85; }
+    .article-body ul, .article-body ol { padding-left: 1.5rem; margin-bottom: 1.2rem; }
+    .article-body li { color: var(--ink-mid); margin-bottom: .5rem; line-height: 1.75; }
+    .article-body blockquote {
+      border-left: 3px solid var(--gold);
+      padding-left: 1.5rem; margin: 2rem 0;
+      font-family: var(--serif); font-style: italic; font-size: 1.1rem;
+      color: var(--ink);
+    }
+    .article-disclaimer {
+      margin-top: 3rem; padding: 1.5rem;
+      border: 1px solid var(--rule);
+      font-size: .8rem; color: var(--ink-mid); line-height: 1.65;
+    }
+    .back-link {
+      display: inline-flex; align-items: center; gap: .5rem;
+      font-size: .78rem; letter-spacing: .12em; text-transform: uppercase;
+      color: var(--gold); margin-bottom: 2rem;
+    }
+    .back-link:hover { gap: .8rem; }
+
+    /* ===== PAGE HEADER (reusable) ===== */
+    .page-header { background: var(--ink); padding: 5rem 0 3.5rem; color: var(--white); }
+    .page-header .section-label { color: var(--gold-lt); }
+    .page-header .section-label::before { background: var(--gold-lt); }
+    .page-header h1 { font-family: var(--serif); font-size: clamp(2rem, 5vw, 3.5rem); font-weight: 300; color: var(--white); margin-bottom: .8rem; }
+    .page-header p { color: rgba(255,255,255,.55); max-width: 520px; }
+
+    /* ===== DIVIDER ===== */
+    .gold-rule { width: 40px; height: 2px; background: var(--gold); margin: 2rem 0; }
+
+    /* ===== RESPONSIVE ===== */
+    @media (max-width: 900px) {
+      .hero-stats { position: static; margin-top: 3rem; flex-direction: row; }
+      .stat { text-align: left; }
+      .about-strip-inner { grid-template-columns: 1fr; gap: 2.5rem; }
+      .about-photo { max-width: 400px; }
+      .practice-grid { grid-template-columns: 1fr 1fr; }
+      .testimonials-grid { grid-template-columns: 1fr 1fr; }
+      .contact-grid { grid-template-columns: 1fr; gap: 3rem; }
+      .footer-inner { grid-template-columns: 1fr 1fr; }
+      .about-body { grid-template-columns: 1fr; }
+      .about-sidebar { position: static; }
+    }
+    @media (max-width: 640px) {
+      nav ul { display: none; }
+      .hamburger { display: flex; }
+      .practice-grid { grid-template-columns: 1fr; }
+      .testimonials-grid { grid-template-columns: 1fr; }
+      .form-row { grid-template-columns: 1fr; }
+      .footer-inner { grid-template-columns: 1fr; }
+      .hero-stats { gap: 1.5rem; flex-wrap: wrap; }
+      .newsletter-form { flex-direction: column; }
+      .newsletter-form input { border-right: 1px solid rgba(255,255,255,.15); border-bottom: none; }
+    }
+  </style>
+</head>
+
+<body>
+
+<!-- ===== HEADER ===== -->
+<header>
+  <div class="container">
+    <div class="nav-inner">
+      <div class="nav-logo" onclick="showPage('home')" style="cursor:pointer;">
+        Bar. Anekwe Ngozie
+        <span>Legal Practitioner · Onitsha</span>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="#" class="active" onclick="showPage('home');return false;" data-page="home">Home</a></li>
+          <li><a href="#" onclick="showPage('about');return false;" data-page="about">About</a></li>
+          <li><a href="#" onclick="showPage('practice');return false;" data-page="practice">Practice Areas</a></li>
+          <li><a href="#" onclick="showPage('blog');return false;" data-page="blog">Articles</a></li>
+          <li><a href="#" onclick="showPage('newsletter');return false;" data-page="newsletter">Newsletter</a></li>
+          <li><a href="#" onclick="showPage('testimonials');return false;" data-page="testimonials">Testimonials</a></li>
+          <li><a href="#" onclick="showPage('contact');return false;" data-page="contact">Contact</a></li>
+        </ul>
+      </nav>
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu" onclick="toggleMobile()">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+  <div class="mobile-nav" id="mobileNav">
+    <ul>
+      <li><a href="#" onclick="showPage('home');closeMobile();return false;">Home</a></li>
+      <li><a href="#" onclick="showPage('about');closeMobile();return false;">About</a></li>
+      <li><a href="#" onclick="showPage('practice');closeMobile();return false;">Practice Areas</a></li>
+      <li><a href="#" onclick="showPage('blog');closeMobile();return false;">Articles</a></li>
+      <li><a href="#" onclick="showPage('newsletter');closeMobile();return false;">Newsletter</a></li>
+      <li><a href="#" onclick="showPage('testimonials');closeMobile();return false;">Testimonials</a></li>
+      <li><a href="#" onclick="showPage('contact');closeMobile();return false;">Contact</a></li>
+    </ul>
+  </div>
+</header>
+
+
+<!-- ======================================================= -->
+<!-- HOME PAGE                                               -->
+<!-- ======================================================= -->
+<div id="page-home" class="page active">
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-bg"></div>
+    <div class="hero-grain"></div>
+    <div class="hero-rule"></div>
+    <div class="container" style="position:relative;z-index:2;width:100%;">
+      <div class="hero-content">
+        <p class="hero-eyebrow">Onitsha · Anambra · Nigeria</p>
+        <h1>Counsel that <em>protects</em> what matters most.</h1>
+        <p>Bar. Anekwe Ngozie brings over 15 years of precise, principled legal practice to individuals, businesses, and institutions across Anambra and Nigeria.</p>
+        <div class="hero-cta">
+          <button class="btn-primary" onclick="showPage('contact')">Schedule a Consultation</button>
+          <button class="btn-ghost" onclick="showPage('practice')">View Practice Areas →</button>
+        </div>
+      </div>
+      <div class="hero-stats">
+        <div class="stat">
+          <div class="stat-num">15<span style="font-size:1.4rem;color:var(--gold);">+</span></div>
+          <div class="stat-label">Years in Practice</div>
+        </div>
+        <div class="stat">
+          <div class="stat-num">13</div>
+          <div class="stat-label">Practice Areas</div>
+        </div>
+        <div class="stat">
+          <div class="stat-num">500<span style="font-size:1.4rem;color:var(--gold);">+</span></div>
+          <div class="stat-label">Cases Resolved</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT STRIP -->
+  <div class="about-strip">
+    <div class="container">
+      <div class="about-strip-inner">
+        <div class="about-photo">
+          <div class="about-photo-placeholder">
+            <svg width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1"><circle cx="12" cy="8" r="4"/><path d="M6 20v-2a6 6 0 0112 0v2"/></svg>
+            <span>Photo — Bar. Anekwe</span>
+          </div>
+        </div>
+        <div>
+          <p class="section-label">About</p>
+          <h2>A practitioner shaped by principle and purpose.</h2>
+          <div class="gold-rule"></div>
+          <p style="color:rgba(255,255,255,.6);line-height:1.8;margin-bottom:1.5rem;">Bar. Anekwe Ngozie is a seasoned legal practitioner based in Onitsha, Anambra State. A graduate of the Nigerian Law School and enrolled member of the Nigerian Bar Association, she has built her career on a foundation of rigorous legal analysis, unwavering ethics, and genuine client service.</p>
+          <p style="color:rgba(255,255,255,.6);line-height:1.8;">Her practice spans corporate and commercial law, civil litigation, family matters, real estate, and more — serving business owners, executives, families, and institutions across Southeast Nigeria.</p>
+          <div class="about-creds">
+            <div class="cred"><div class="cred-dot"></div><div class="cred-text">Called to the Nigerian Bar · Nigerian Law School</div></div>
+            <div class="cred"><div class="cred-dot"></div><div class="cred-text">Member, Nigerian Bar Association (NBA) — Onitsha Branch</div></div>
+            <div class="cred"><div class="cred-dot"></div><div class="cred-text">15+ Years of Active Practice in Anambra & Beyond</div></div>
+          </div>
+          <button class="btn-primary" style="margin-top:2rem;" onclick="showPage('about')">Full Profile →</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- PRACTICE AREAS PREVIEW -->
+  <section>
+    <div class="container">
+      <p class="section-label">Expertise</p>
+      <h2>Practice Areas</h2>
+      <p class="lead">Comprehensive legal counsel across the full landscape of Nigerian law — each area handled with depth, discretion, and dedication.</p>
+      <div class="practice-grid">
+        <div class="practice-card">
+          <div class="practice-icon">⚖️</div>
+          <h3>Corporate & Commercial Law</h3>
+          <p>Business formation, CAC registration, contracts, mergers, compliance, and corporate governance.</p>
+          <span class="practice-link" onclick="showPage('practice')">Learn more →</span>
+        </div>
+        <div class="practice-card">
+          <div class="practice-icon">🏛️</div>
+          <h3>Civil Litigation</h3>
+          <p>Contract disputes, tort claims, property conflicts, debt recovery and court representation.</p>
+          <span class="practice-link" onclick="showPage('practice')">Learn more →</span>
+        </div>
+        <div class="practice-card">
+          <div class="practice-icon">🏠</div>
+          <h3>Real Estate & Property</h3>
+          <p>Land transactions, title verification, leases, and dispute resolution under the Land Use Act.</p>
+          <span class="practice-link" onclick="showPage('practice')">Learn more →</span>
+        </div>
+        <div class="practice-card">
+          <div class="practice-icon">👨‍👩‍👧</div>
+          <h3>Family & Estate Law</h3>
+          <p>Divorce, custody, inheritance, succession planning, and wills under Nigerian law.</p>
+          <span class="practice-link" onclick="showPage('practice')">Learn more →</span>
+        </div>
+        <div class="practice-card">
+          <div class="practice-icon">🔒</div>
+          <h3>Criminal Defence</h3>
+          <p>Bail applications, defence representation, appeals and rights advocacy across Nigerian courts.</p>
+          <span class="practice-link" onclick="showPage('practice')">Learn more →</span>
+        </div>
+        <div class="practice-card">
+          <div class="practice-icon">📋</div>
+          <h3>Labour & Employment</h3>
+          <p>Workplace disputes, wrongful dismissal, employment contracts and rights under the Labour Act.</p>
+          <span class="practice-link" onclick="showPage('practice')">Learn more →</span>
+        </div>
+      </div>
+      <div style="text-align:center;margin-top:2.5rem;">
+        <button class="btn-primary" onclick="showPage('practice')">All 13 Practice Areas</button>
+      </div>
+    </div>
+  </section>
+
+  <hr class="rule" />
+
+  <!-- RECENT ARTICLES -->
+  <section>
+    <div class="container">
+      <p class="section-label">Resources</p>
+      <h2>Legal Insights</h2>
+      <p class="lead">Practical articles on everyday Nigerian legal matters — written plainly, so you always know where you stand.</p>
+      <div class="blog-grid">
+        <div class="blog-card" onclick="openArticle(0)">
+          <div class="blog-tag">Banking & Finance</div>
+          <h3>How to Write a Formal Bank Letter in Nigeria</h3>
+          <p>A bank letter can open doors — or close them. Learn the exact structure, tone, and language that Nigerian banks expect.</p>
+          <div class="blog-meta"><span>Dec 2024 · 5 min read</span><span class="read-more">Read →</span></div>
+        </div>
+        <div class="blog-card" onclick="openArticle(1)">
+          <div class="blog-tag">Professional Correspondence</div>
+          <h3>Addressing Persons of Authority the Right Way</h3>
+          <p>Government officers, judges, traditional rulers — how you address them in writing matters more than most people realise.</p>
+          <div class="blog-meta"><span>Nov 2024 · 4 min read</span><span class="read-more">Read →</span></div>
+        </div>
+        <div class="blog-card" onclick="openArticle(2)">
+          <div class="blog-tag">Legal Process</div>
+          <h3>Making a Legal Inquiry: A Step-by-Step Guide</h3>
+          <p>Knowing when and how to make a formal legal inquiry — to a company, institution or government body — can be the difference between getting answers and being ignored.</p>
+          <div class="blog-meta"><span>Oct 2024 · 6 min read</span><span class="read-more">Read →</span></div>
+        </div>
+      </div>
+      <div style="text-align:center;margin-top:2.5rem;">
+        <button class="btn-primary" onclick="showPage('blog')">All Articles →</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- TESTIMONIAL SNIPPET -->
+  <div class="testimonials-bg">
+    <section>
+      <div class="container">
+        <p class="section-label">Testimonials</p>
+        <h2>What Clients Say</h2>
+        <div class="testimonials-grid" style="grid-template-columns:repeat(3,1fr);">
+          <div class="testimonial-card">
+            <p class="testimonial-quote">"Her corporate expertise saved our company from a contractual disaster. Methodical, calm, and remarkably thorough."</p>
+            <div class="testimonial-author">Emeka Okafor</div>
+            <div class="testimonial-org">CEO, Okafor Trading Consortium, Onitsha</div>
+          </div>
+          <div class="testimonial-card">
+            <p class="testimonial-quote">"Bar. Anekwe handled our land title dispute with precision that other lawyers simply could not match."</p>
+            <div class="testimonial-author">Mrs. Chidinma Eze</div>
+            <div class="testimonial-org">Director, Eze Properties Ltd</div>
+          </div>
+          <div class="testimonial-card">
+            <p class="testimonial-quote">"Professional, principled, and always available. She is the lawyer every business in Anambra needs."</p>
+            <div class="testimonial-author">Barrister Ifeanyi Nwachukwu</div>
+            <div class="testimonial-org">Partner, Nwachukwu & Co. Law Firm</div>
+          </div>
+        </div>
+        <div style="text-align:center;margin-top:2rem;">
+          <button class="btn-primary" onclick="showPage('testimonials')">Read All Testimonials</button>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <!-- NEWSLETTER TEASER -->
+  <div class="newsletter-section">
+    <div class="container">
+      <div class="newsletter-inner">
+        <p class="section-label" style="justify-content:center;color:var(--gold-lt);">Weekly Briefing</p>
+        <h2>Stay Legally Informed</h2>
+        <p>Every week — her personal read on current affairs, plain-language breakdowns of new laws, and legal hot takes you won't find in textbooks.</p>
+        <div class="newsletter-tags">
+          <span class="newsletter-tag">Personal Commentary</span>
+          <span class="newsletter-tag">New Laws Explained</span>
+          <span class="newsletter-tag">Hot Takes</span>
+          <span class="newsletter-tag">Practice Tips</span>
+        </div>
+        <div class="newsletter-form">
+          <input type="email" placeholder="Your email address" />
+          <button onclick="subscribeNewsletter()">Subscribe</button>
+        </div>
+        <p style="font-size:.72rem;color:rgba(255,255,255,.3);margin-top:1rem;">No spam. Unsubscribe at any time. Your data is protected under Nigeria's NDPR.</p>
+      </div>
+    </div>
+  </div>
+
+</div><!-- end home -->
+
+
+<!-- ======================================================= -->
+<!-- ABOUT PAGE                                              -->
+<!-- ======================================================= -->
+<div id="page-about" class="page">
+  <div class="about-hero">
+    <div class="container">
+      <p class="section-label">About</p>
+      <h1>Bar. Anekwe Ngozie</h1>
+      <p>Legal Practitioner · 15+ Years · Onitsha, Anambra State</p>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="about-body">
+      <!-- Sidebar -->
+      <div class="about-sidebar">
+        <div class="about-photo-lg">
+          <div class="about-photo-lg-placeholder">
+            <svg width="72" height="72" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1"><circle cx="12" cy="8" r="4"/><path d="M6 20v-2a6 6 0 0112 0v2"/></svg>
+            <span>Photo</span>
+          </div>
+        </div>
+        <div class="about-cred-list">
+          <div class="about-cred-item"><strong>Education</strong>Nigerian Law School, Lagos</div>
+          <div class="about-cred-item"><strong>Bar Admission</strong>Called to the Nigerian Bar</div>
+          <div class="about-cred-item"><strong>Membership</strong>Nigerian Bar Association (NBA) — Onitsha Branch</div>
+          <div class="about-cred-item"><strong>Practice Location</strong>Onitsha, Anambra State</div>
+          <div class="about-cred-item"><strong>Years of Practice</strong>15+ Years</div>
+          <div class="about-cred-item"><strong>Areas of Focus</strong>Corporate, Civil, Real Estate, Family</div>
+        </div>
+      </div>
+
+      <!-- Main Content -->
+      <div class="about-main">
+        <p class="section-label">Biography</p>
+        <h2>A career built on clarity and commitment.</h2>
+        <div class="gold-rule"></div>
+
+        <p>Bar. Anekwe Ngozie is one of Onitsha's most respected legal practitioners — a lawyer who combines deep statutory knowledge with a practical understanding of the realities her clients face every day. With over 15 years of active practice, she has become a trusted counsel to businesses, families, institutions, and individuals across Anambra State and Southeast Nigeria.</p>
+
+        <p>She attended the Nigerian Law School and was called to the Nigerian Bar, thereafter establishing a practice grounded in the conviction that legal services should be accessible, clear, and genuinely useful. Her early years sharpened her skills in commercial and civil matters — a foundation she has since expanded across all major branches of Nigerian law.</p>
+
+        <p>Her approach is marked by precision: careful reading of facts, rigorous legal research, and communication that cuts through complexity. Clients consistently describe working with her as transformative — not simply because she wins cases, but because they leave understanding exactly what happened and why.</p>
+
+        <div class="philosophy-block">
+          <p>"The law exists to serve people — not to intimidate them. My work is to make that service real, practical, and dignified for every client who walks through my door."</p>
+        </div>
+
+        <p class="section-label" style="margin-top:3rem;">Experience & Achievements</p>
+        <h2>A track record across many disciplines.</h2>
+        <div class="gold-rule"></div>
+
+        <p>Over her 15+ year career, Bar. Anekwe Ngozie has handled matters ranging from complex corporate mergers and CAC regulatory compliance, to bitterly contested family inheritance disputes and land title litigation under the Land Use Act. She has appeared before the High Court, Court of Appeal, and various tribunals and arbitration panels.</p>
+
+        <p>She has advised numerous Onitsha-based businesses — from sole proprietorships navigating their first CAC registration to established conglomerates managing multi-party contracts. Her network of vetted professional collaborators means that even when a matter demands specialist input, clients always receive seamless, coordinated service.</p>
+
+        <p>Beyond individual practice, she is a regular contributor to legal education and public awareness initiatives within the NBA Onitsha Branch, and has spoken on issues of women's rights, property law, and business compliance at local fora.</p>
+
+        <p class="section-label" style="margin-top:3rem;">Philosophy</p>
+        <h2>The values behind the practice.</h2>
+        <div class="gold-rule"></div>
+
+        <p>Bar. Anekwe practices within a clear ethical framework shaped by the Nigerian Bar Association's Rules of Professional Conduct (RPC 2023). She does not promise outcomes; she promises diligence. She does not take on cases she cannot serve well; she refers where she should and collaborates where she must.</p>
+
+        <p>Her philosophy is straightforward: every client deserves to understand their legal position, every matter deserves thorough preparation, and justice — however imperfect the system — is worth fighting for thoughtfully.</p>
+
+        <div style="margin-top:3rem;">
+          <button class="btn-primary" onclick="showPage('contact')">Book a Consultation</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <div id="about-footer"></div>
+</div>
+
+
+<!-- ======================================================= -->
+<!-- PRACTICE AREAS                                          -->
+<!-- ======================================================= -->
+<div id="page-practice" class="page">
+  <div class="page-header">
+    <div class="container">
+      <p class="section-label">Expertise</p>
+      <h1>Practice Areas</h1>
+      <p>Comprehensive legal representation across all major branches of Nigerian law — each handled with individual attention and 15+ years of expertise.</p>
+    </div>
+  </div>
+
+  <section>
+    <div class="container">
+      <div class="practice-grid" style="grid-template-columns:repeat(2,1fr);">
+
+        <div class="practice-card">
+          <div class="practice-icon">⚖️</div>
+          <h3>Corporate & Commercial Law</h3>
+          <p>Business formation, CAC registration, shareholder agreements, mergers & acquisitions, regulatory compliance under CAMA, IP counselling for startups, and corporate governance advisory for growing enterprises in Anambra and beyond.</p>
+        </div>
+
+        <div class="practice-card">
+          <div class="practice-icon">🏛️</div>
+          <h3>Civil Law & Litigation</h3>
+          <p>Contract disputes, debt recovery, negligence and tort claims, injunctions, declaratory orders, and full court representation before the High Court and Court of Appeal. We handle both plaintiff and defendant mandates with equal rigour.</p>
+        </div>
+
+        <div class="practice-card">
+          <div class="practice-icon">🔖</div>
+          <h3>Constitutional Law</h3>
+          <p>Human rights enforcement under the 1999 Constitution (as amended), fundamental rights applications, judicial reviews, and petitions before constitutional and superior courts across Nigeria.</p>
+        </div>
+
+        <div class="practice-card">
+          <div class="practice-icon">⚔️</div>
+          <h3>Criminal Law & Defence</h3>
+          <p>Bail applications, defence representation in all criminal matters from the Magistrate Court to the Court of Appeal, appeal filings, and rights advocacy to ensure every accused person receives a fair defence under Nigerian law.</p>
+        </div>
+
+        <div class="practice-card">
+          <div class="practice-icon">🏠</div>
+          <h3>Property & Real Estate Law</h3>
+          <p>Land acquisition and title verification, lease agreements, purchase and sale transactions, mortgage advisory, and property dispute resolution under the Land Use Act. Deep familiarity with Anambra State land registry processes.</p>
+        </div>
+
+        <div class="practice-card">
+          <div class="practice-icon">👨‍👩‍👧</div>
+          <h3>Family Law</h3>
+          <p>Divorce and separation proceedings, child custody and access, spousal maintenance, adoption processes, and matrimonial property — handled with sensitivity and strict confidentiality under both statutory and customary frameworks.</p>
+        </div>
+
+        <div class="practice-card">
+          <div class="practice-icon">📜</div>
+          <h3>Estate Planning & Succession</h3>
+          <p>Will drafting and execution, intestate succession advisory, estate administration, trust structures, and probate proceedings — ensuring your assets are protected and your wishes respected.</p>
+        </div>
+
+        <div class="practice-card">
+          <div class="practice-icon">👷</div>
+          <h3>Labour & Employment Law</h3>
+          <p>Employment contract review, wrongful dismissal claims, workplace rights enforcement, industrial dispute resolution, and compliance advisory under Nigeria's Labour Act — for both employers and employees.</p>
+        </div>
+
+        <div class="practice-card">
+          <div class="practice-icon">💡</div>
+          <h3>Intellectual Property Law</h3>
+          <p>Trademark registration, copyright advisory, patent counselling, and IP enforcement through the Nigerian Copyright Commission and related bodies — protecting the creative and commercial assets of individuals and businesses.</p>
+        </div>
+
+        <div class="practice-card">
+          <div class="practice-icon">🧾</div>
+          <h3>Taxation Law</h3>
+          <p>Tax compliance advisory, FIRS dispute representation, tax structuring for businesses, and guidance on state and federal tax obligations — including the latest updates from the Finance Acts.</p>
+        </div>
+
+        <div class="practice-card">
+          <div class="practice-icon">⛽</div>
+          <h3>Oil & Gas Law</h3>
+          <p>Regulatory compliance, upstream and downstream contract advisory, joint venture agreements, and dispute resolution in Nigeria's energy sector — with reference to the Petroleum Industry Act (PIA) 2021.</p>
+        </div>
+
+        <div class="practice-card">
+          <div class="practice-icon">🚢</div>
+          <h3>Maritime & Admiralty Law</h3>
+          <p>Shipping contracts, port operations advisory, cargo dispute resolution, and international trade legal support — particularly relevant for Onitsha's significant river commerce and import/export businesses.</p>
+        </div>
+
+        <div class="practice-card" style="grid-column:1/-1;">
+          <div class="practice-icon">✊</div>
+          <h3>Human Rights & Public Interest Law</h3>
+          <p>Advocacy for fundamental rights violations, representation for individuals and groups whose constitutional rights have been infringed, and collaboration with NGOs and civil society organisations on public interest litigation. Justice is not a privilege — it is a right.</p>
+        </div>
+      </div>
+
+      <div style="text-align:center;margin-top:3rem;">
+        <p style="color:var(--ink-mid);margin-bottom:1.5rem;font-size:.9rem;">Not sure which area applies to your situation? Get in touch — a brief consultation will clarify everything.</p>
+        <button class="btn-primary" onclick="showPage('contact')">Book a Consultation</button>
+      </div>
+    </div>
+  </section>
+</div>
+
+
+<!-- ======================================================= -->
+<!-- BLOG / ARTICLES PAGE                                    -->
+<!-- ======================================================= -->
+<div id="page-blog" class="page">
+  <div class="page-header">
+    <div class="container">
+      <p class="section-label">Legal Insights</p>
+      <h1>Articles</h1>
+      <p>Plain-language guidance on everyday Nigerian legal matters. No jargon — just what you need to know.</p>
+    </div>
+  </div>
+
+  <section>
+    <div class="container">
+      <div class="blog-grid" style="grid-template-columns:repeat(auto-fill,minmax(320px,1fr));">
+
+        <div class="blog-card" onclick="openArticle(0)">
+          <div class="blog-tag">Banking & Finance</div>
+          <h3>How to Write a Formal Bank Letter in Nigeria</h3>
+          <p>A bank letter can open doors — or close them permanently. Learn the exact format, language, and tone that Nigerian banks expect.</p>
+          <div class="blog-meta"><span>Dec 2024 · 5 min read</span><span class="read-more">Read →</span></div>
+        </div>
+
+        <div class="blog-card" onclick="openArticle(1)">
+          <div class="blog-tag">Professional Correspondence</div>
+          <h3>Addressing Persons of Authority the Right Way</h3>
+          <p>Government officers, judges, traditional rulers, and senior officials — how you address them in formal letters can determine whether you get a response.</p>
+          <div class="blog-meta"><span>Nov 2024 · 4 min read</span><span class="read-more">Read →</span></div>
+        </div>
+
+        <div class="blog-card" onclick="openArticle(2)">
+          <div class="blog-tag">Legal Process</div>
+          <h3>Making a Legal Inquiry: A Step-by-Step Guide</h3>
+          <p>When and how to make a formal legal inquiry — to a company, institution, or government body — and what to do when you are ignored.</p>
+          <div class="blog-meta"><span>Oct 2024 · 6 min read</span><span class="read-more">Read →</span></div>
+        </div>
+
+        <div class="blog-card" onclick="openArticle(3)">
+          <div class="blog-tag">Legal Notices</div>
+          <h3>Understanding and Issuing a Legal Notice in Nigeria</h3>
+          <p>A legal notice is often the first formal step before a lawsuit. Understand what it is, when to issue one, and what happens if you receive one.</p>
+          <div class="blog-meta"><span>Sep 2024 · 5 min read</span><span class="read-more">Read →</span></div>
+        </div>
+
+        <div class="blog-card" onclick="openArticle(4)">
+          <div class="blog-tag">Know Your Rights</div>
+          <h3>What to Do When You Are Served Legal Papers</h3>
+          <p>Being served court documents can be alarming. Here is exactly what it means, what your time limits are, and what you must do next.</p>
+          <div class="blog-meta"><span>Aug 2024 · 5 min read</span><span class="read-more">Read →</span></div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+</div>
+
+
+<!-- ======================================================= -->
+<!-- ARTICLE VIEW (single article)                           -->
+<!-- ======================================================= -->
+<div id="page-article" class="page">
+  <div class="article-header">
+    <div class="container">
+      <div id="article-tag" class="section-label"></div>
+      <h1 id="article-title"></h1>
+      <p id="article-meta"></p>
+    </div>
+  </div>
+  <div class="container">
+    <div class="article-body">
+      <a class="back-link" href="#" onclick="showPage('blog');return false;">← Back to Articles</a>
+      <div id="article-content"></div>
+      <div class="article-disclaimer">
+        <strong>Disclaimer:</strong> This article is intended for general informational purposes only and does not constitute legal advice. Laws may have been amended since publication. For advice specific to your situation, please consult a qualified legal practitioner. If you have questions, Bar. Anekwe Ngozie is available for consultations — <a href="#" onclick="showPage('contact');return false;" style="color:var(--gold);">contact us here</a>.
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- ======================================================= -->
+<!-- NEWSLETTER PAGE                                         -->
+<!-- ======================================================= -->
+<div id="page-newsletter" class="page">
+  <div class="page-header">
+    <div class="container">
+      <p class="section-label">Weekly Briefing</p>
+      <h1>The Anekwe Brief</h1>
+      <p>A weekly newsletter by Bar. Anekwe Ngozie — personal commentary on current affairs, new laws explained simply, and legal hot takes.</p>
+    </div>
+  </div>
+
+  <section>
+    <div class="container">
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:5rem;align-items:start;">
+        <div>
+          <p class="section-label">What You Get</p>
+          <h2>Straight talk. Every week.</h2>
+          <div class="gold-rule"></div>
+
+          <div style="margin-top:2rem;display:flex;flex-direction:column;gap:1.8rem;">
+            <div style="display:grid;grid-template-columns:40px 1fr;gap:1rem;align-items:start;">
+              <div style="width:40px;height:40px;background:var(--ink);display:flex;align-items:center;justify-content:center;color:var(--gold);font-size:1.1rem;flex-shrink:0;">📰</div>
+              <div>
+                <h3 style="font-size:1rem;margin-bottom:.4rem;">Current Affairs — Her Take</h3>
+                <p style="font-size:.87rem;color:var(--ink-mid);">What's happening in Nigeria, dissected through a legal lens. Not just opinion — analysis you can act on.</p>
+              </div>
+            </div>
+            <div style="display:grid;grid-template-columns:40px 1fr;gap:1rem;align-items:start;">
+              <div style="width:40px;height:40px;background:var(--ink);display:flex;align-items:center;justify-content:center;color:var(--gold);font-size:1.1rem;flex-shrink:0;">📋</div>
+              <div>
+                <h3 style="font-size:1rem;margin-bottom:.4rem;">New Laws, Simply Explained</h3>
+                <p style="font-size:.87rem;color:var(--ink-mid);">When the government passes a new act or regulation, she reads it so you don't have to — and tells you what it means for you.</p>
+              </div>
+            </div>
+            <div style="display:grid;grid-template-columns:40px 1fr;gap:1rem;align-items:start;">
+              <div style="width:40px;height:40px;background:var(--ink);display:flex;align-items:center;justify-content:center;color:var(--gold);font-size:1.1rem;flex-shrink:0;">🔥</div>
+              <div>
+                <h3 style="font-size:1rem;margin-bottom:.4rem;">Hot Takes & Discussions</h3>
+                <p style="font-size:.87rem;color:var(--ink-mid);">Controversial legal questions, contested rulings, ethical dilemmas — she weighs in, clearly and honestly.</p>
+              </div>
+            </div>
+            <div style="display:grid;grid-template-columns:40px 1fr;gap:1rem;align-items:start;">
+              <div style="width:40px;height:40px;background:var(--ink);display:flex;align-items:center;justify-content:center;color:var(--gold);font-size:1.1rem;flex-shrink:0;">💼</div>
+              <div>
+                <h3 style="font-size:1rem;margin-bottom:.4rem;">Practice Insights</h3>
+                <p style="font-size:.87rem;color:var(--ink-mid);">Practical tips for businesses, individuals, and professionals on staying legally sound in everyday life.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Signup Card -->
+        <div>
+          <div style="background:var(--ink);padding:3rem;position:relative;overflow:hidden;">
+            <div style="position:absolute;top:-20px;right:-20px;width:120px;height:120px;border:1px solid rgba(184,146,42,.15);border-radius:50%;"></div>
+            <div style="position:absolute;bottom:-30px;left:-30px;width:160px;height:160px;border:1px solid rgba(184,146,42,.08);border-radius:50%;"></div>
+
+            <p style="font-family:var(--serif);font-size:1.6rem;color:white;line-height:1.3;margin-bottom:.8rem;position:relative;z-index:1;">Join readers who think seriously about Nigerian law.</p>
+            <p style="color:rgba(255,255,255,.5);font-size:.85rem;margin-bottom:2rem;position:relative;z-index:1;">Free. Weekly. No fluff.</p>
+
+            <div style="position:relative;z-index:1;">
+              <div class="form-group" style="margin-bottom:1rem;">
+                <label style="color:rgba(255,255,255,.5);font-size:.68rem;letter-spacing:.14em;text-transform:uppercase;">First Name</label>
+                <input type="text" placeholder="Chidi" style="background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.12);color:white;width:100%;padding:.85rem 1rem;font-family:var(--sans);font-size:.9rem;outline:none;" />
+              </div>
+              <div class="form-group" style="margin-bottom:1.5rem;">
+                <label style="color:rgba(255,255,255,.5);font-size:.68rem;letter-spacing:.14em;text-transform:uppercase;">Email Address</label>
+                <input type="email" placeholder="chidi@example.com" style="background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.12);color:white;width:100%;padding:.85rem 1rem;font-family:var(--sans);font-size:.9rem;outline:none;" />
+              </div>
+              <button class="btn-primary" style="width:100%;justify-content:center;" onclick="subscribeNewsletter()">Subscribe — It's Free</button>
+              <p style="font-size:.7rem;color:rgba(255,255,255,.28);margin-top:1rem;text-align:center;">Protected under Nigeria's NDPR. Unsubscribe any time.</p>
+            </div>
+          </div>
+
+          <div style="border:1px solid var(--rule);padding:1.5rem;margin-top:1.5rem;display:flex;align-items:center;gap:1.2rem;">
+            <div style="font-size:2rem;">📩</div>
+            <div>
+              <div style="font-size:.8rem;font-weight:500;">Every Sunday morning</div>
+              <div style="font-size:.78rem;color:var(--ink-mid);">Land in your inbox before the week begins</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>
+
+
+<!-- ======================================================= -->
+<!-- TESTIMONIALS PAGE                                       -->
+<!-- ======================================================= -->
+<div id="page-testimonials" class="page">
+  <div class="page-header">
+    <div class="container">
+      <p class="section-label">Client Voices</p>
+      <h1>Testimonials</h1>
+      <p>Reflecting 15+ years of trust, results, and relationships built on genuine legal service across Anambra and Nigeria.</p>
+    </div>
+  </div>
+
+  <div class="testimonials-bg">
+    <section>
+      <div class="container">
+        <div class="testimonials-grid">
+
+          <div class="testimonial-card">
+            <p class="testimonial-quote">"Her corporate expertise saved our company from a contractual disaster. Methodical, calm, and remarkably thorough — she knew exactly where the risk lay before we even saw it."</p>
+            <div class="testimonial-author">Emeka Okafor</div>
+            <div class="testimonial-org">CEO, Okafor Trading Consortium, Onitsha</div>
+          </div>
+
+          <div class="testimonial-card">
+            <p class="testimonial-quote">"Bar. Anekwe handled our land title dispute with a precision that other lawyers could not match. We recovered property we had almost given up on after years of frustration."</p>
+            <div class="testimonial-author">Mrs. Chidinma Eze</div>
+            <div class="testimonial-org">Director, Eze Properties Ltd, Anambra</div>
+          </div>
+
+          <div class="testimonial-card">
+            <p class="testimonial-quote">"Professional, principled, and always available. She explained every step of our merger process in plain language and protected our interests throughout."</p>
+            <div class="testimonial-author">Mr. Chukwuemeka Nwodi</div>
+            <div class="testimonial-org">Managing Director, Nwodi Logistics Group</div>
+          </div>
+
+          <div class="testimonial-card">
+            <p class="testimonial-quote">"We engaged her for our CAC compliance review and came away with a complete corporate governance overhaul. The depth of her knowledge is genuinely impressive."</p>
+            <div class="testimonial-author">Board Secretary</div>
+            <div class="testimonial-org">Anambra State Cooperative Finance Agency</div>
+          </div>
+
+          <div class="testimonial-card">
+            <p class="testimonial-quote">"She helped us navigate a highly contentious inheritance matter within our family with professionalism and empathy. The outcome was fair, the process dignified."</p>
+            <div class="testimonial-author">The Obiechina Family</div>
+            <div class="testimonial-org">Onitsha, Anambra State</div>
+          </div>
+
+          <div class="testimonial-card">
+            <p class="testimonial-quote">"Our manufacturing firm faced a serious labour dispute. Bar. Anekwe's command of the Labour Act and sharp negotiation skills resolved it without a single court appearance."</p>
+            <div class="testimonial-author">Operations Director</div>
+            <div class="testimonial-org">Sunrise Manufacturing Co., Nnewi</div>
+          </div>
+
+          <div class="testimonial-card">
+            <p class="testimonial-quote">"Brilliant, efficient, and deeply ethical. She took on our fundamental rights application pro bono and won. She is the definition of a lawyer who believes in justice."</p>
+            <div class="testimonial-author">Programme Coordinator</div>
+            <div class="testimonial-org">Southeast Human Rights Advocacy Network</div>
+          </div>
+
+          <div class="testimonial-card">
+            <p class="testimonial-quote">"As a first-time business owner in Onitsha, I had no idea what I was doing. She registered my company, advised on contracts, and helped me understand the rules — all in plain English."</p>
+            <div class="testimonial-author">Adaeze Mbachu</div>
+            <div class="testimonial-org">Founder, Mbachu Catering & Events</div>
+          </div>
+
+          <div class="testimonial-card">
+            <p class="testimonial-quote">"We hired her to review a real estate transaction for our hotel expansion. She identified a title defect that would have cost us millions. That single engagement paid for itself a hundredfold."</p>
+            <div class="testimonial-author">General Manager</div>
+            <div class="testimonial-org">Majesty Hotels & Suites, Awka</div>
+          </div>
+
+          <div class="testimonial-card">
+            <p class="testimonial-quote">"I was served court papers and had no idea what to do. She took my call on a Saturday morning, explained the situation calmly, and had a response filed before the deadline. Absolute professional."</p>
+            <div class="testimonial-author">Ikenna Obasi</div>
+            <div class="testimonial-org">Independent Trader, Onitsha Main Market</div>
+          </div>
+
+          <div class="testimonial-card">
+            <p class="testimonial-quote">"Bar. Anekwe has been our retained legal counsel for three years. Her commercial law advisory has materially shaped how we structure deals. We would not function without her."</p>
+            <div class="testimonial-author">Chief Financial Officer</div>
+            <div class="testimonial-org">Nexus Capital Partners, Enugu</div>
+          </div>
+
+          <div class="testimonial-card">
+            <p class="testimonial-quote">"She represented our institution in a regulatory matter before a federal tribunal. Her preparation was meticulous and her advocacy composed under pressure. We secured a favourable decision."</p>
+            <div class="testimonial-author">Registrar</div>
+            <div class="testimonial-org">Federal Polytechnic, Oko, Anambra State</div>
+          </div>
+
+          <div class="testimonial-card">
+            <p class="testimonial-quote">"A rare combination of intellectual depth and genuine warmth. She helped me structure my estate plan so that my business and family are protected regardless of what happens. I sleep better now."</p>
+            <div class="testimonial-author">Dr. Obiora Nzewi</div>
+            <div class="testimonial-org">Medical Director, Nzewi Specialist Hospital</div>
+          </div>
+
+          <div class="testimonial-card">
+            <p class="testimonial-quote">"We engaged her for intellectual property protection for our software brand. She handled trademark registration and drafted our licensing agreements with thoroughness that our Lagos counterparts couldn't match locally."</p>
+            <div class="testimonial-author">Co-Founder</div>
+            <div class="testimonial-org">PayTrack Technologies Ltd, Onitsha</div>
+          </div>
+
+          <div class="testimonial-card">
+            <p class="testimonial-quote">"I have referred countless clients to Bar. Anekwe over the years. She has never once let me down or given a client cause to complain. That kind of consistency is extraordinarily rare in this profession."</p>
+            <div class="testimonial-author">Barrister Ifeanyi Nwachukwu</div>
+            <div class="testimonial-org">Partner, Nwachukwu & Co. Law Firm, Onitsha</div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+  </div>
+</div>
+
+
+<!-- ======================================================= -->
+<!-- CONTACT PAGE                                            -->
+<!-- ======================================================= -->
+<div id="page-contact" class="page">
+  <div class="page-header">
+    <div class="container">
+      <p class="section-label">Get in Touch</p>
+      <h1>Contact</h1>
+      <p>Available for consultations — virtual or in-person — Monday through Friday, 9 AM to 5 PM.</p>
+    </div>
+  </div>
+
+  <section>
+    <div class="container">
+      <div class="contact-grid">
+
+        <!-- Info Block -->
+        <div class="contact-info-block">
+          <div class="contact-item">
+            <div class="contact-item-label">Office Address</div>
+            <div class="contact-item-val">
+              Bar. Anekwe Ngozie<br />
+              [Law Chambers Address]<br />
+              Onitsha, Anambra State, Nigeria
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="contact-item-label">Phone</div>
+            <div class="contact-item-val"><a href="tel:+2348000000000">+234 800 000 0000</a></div>
+          </div>
+          <div class="contact-item">
+            <div class="contact-item-label">WhatsApp</div>
+            <div class="contact-item-val"><a href="https://wa.me/2348000000000" target="_blank">Send a WhatsApp Message</a></div>
+          </div>
+          <div class="contact-item">
+            <div class="contact-item-label">Email</div>
+            <div class="contact-item-val"><a href="mailto:info@anekwengozie.ng">info@anekwengozie.ng</a></div>
+          </div>
+          <div class="contact-item">
+            <div class="contact-item-label">Office Hours</div>
+            <div class="contact-item-val">Monday – Friday<br />9:00 AM – 5:00 PM WAT</div>
+          </div>
+
+          <div class="social-row">
+            <!-- Instagram -->
+            <a href="#" class="social-btn" title="Instagram" aria-label="Instagram">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+            </a>
+            <!-- X / Twitter -->
+            <a href="#" class="social-btn" title="X (Twitter)" aria-label="X">
+              <svg width="16" height="16" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M4 4l11.733 16h4.267l-11.733 -16z"/><path d="M4 20l6.768 -6.768m2.46 -2.46l6.772 -6.772"/></svg>
+            </a>
+            <!-- LinkedIn -->
+            <a href="#" class="social-btn" title="LinkedIn" aria-label="LinkedIn">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+            </a>
+            <!-- YouTube -->
+            <a href="#" class="social-btn" title="YouTube" aria-label="YouTube">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 2A29 29 0 0 0 1 11.75a29 29 0 0 0 .46 5.33A2.78 2.78 0 0 0 3.4 19c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-2 29 29 0 0 0 .46-5.25 29 29 0 0 0-.46-5.33z"/><polygon points="9.75 15.02 15.5 11.75 9.75 8.48 9.75 15.02"/></svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- Form -->
+        <div class="contact-form">
+          <div class="form-row">
+            <div class="form-group">
+              <label>First Name</label>
+              <input type="text" placeholder="Chukwuemeka" />
+            </div>
+            <div class="form-group">
+              <label>Last Name</label>
+              <input type="text" placeholder="Okonkwo" />
+            </div>
+          </div>
+          <div class="form-group">
+            <label>Email Address</label>
+            <input type="email" placeholder="chukwu@example.com" />
+          </div>
+          <div class="form-group">
+            <label>Phone Number</label>
+            <input type="tel" placeholder="+234 800 000 0000" />
+          </div>
+          <div class="form-group">
+            <label>Practice Area</label>
+            <select>
+              <option value="">Select area of concern</option>
+              <option>Corporate & Commercial Law</option>
+              <option>Civil Litigation</option>
+              <option>Real Estate & Property</option>
+              <option>Family Law</option>
+              <option>Criminal Defence</option>
+              <option>Estate Planning & Succession</option>
+              <option>Labour & Employment</option>
+              <option>Intellectual Property</option>
+              <option>Taxation</option>
+              <option>Oil & Gas</option>
+              <option>Maritime & Admiralty</option>
+              <option>Human Rights</option>
+              <option>Other / Not Sure</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label>Message</label>
+            <textarea placeholder="Briefly describe your legal matter. All inquiries are confidential."></textarea>
+          </div>
+          <button class="form-submit" onclick="submitForm()">Send Inquiry →</button>
+          <p class="form-note">All inquiries are strictly confidential. We typically respond within 24 hours on business days.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>
+
+
+<!-- ===== FOOTER ===== -->
+<footer id="main-footer">
+  <div class="container">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <div class="footer-logo">
+          Bar. Anekwe Ngozie
+          <span>Legal Practitioner · Onitsha, Nigeria</span>
+        </div>
+        <p class="footer-desc">15+ years of principled legal practice across corporate, civil, family, property and all major branches of Nigerian law. Serving Onitsha, Anambra and beyond.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Navigate</h4>
+        <ul>
+          <li><a href="#" onclick="showPage('home');return false;">Home</a></li>
+          <li><a href="#" onclick="showPage('about');return false;">About</a></li>
+          <li><a href="#" onclick="showPage('practice');return false;">Practice Areas</a></li>
+          <li><a href="#" onclick="showPage('blog');return false;">Articles</a></li>
+          <li><a href="#" onclick="showPage('newsletter');return false;">Newsletter</a></li>
+          <li><a href="#" onclick="showPage('testimonials');return false;">Testimonials</a></li>
+          <li><a href="#" onclick="showPage('contact');return false;">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Contact</h4>
+        <ul>
+          <li><a href="tel:+2348000000000">+234 800 000 0000</a></li>
+          <li><a href="mailto:info@anekwengozie.ng">info@anekwengozie.ng</a></li>
+          <li><a href="https://wa.me/2348000000000" target="_blank">WhatsApp</a></li>
+          <li style="color:rgba(255,255,255,.3);font-size:.78rem;margin-top:.5rem;">Onitsha, Anambra State<br/>Mon–Fri · 9AM–5PM</li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2025 Bar. Anekwe Ngozie. All Rights Reserved. | Member, NBA Onitsha Branch</span>
+      <span>
+        <a href="#" onclick="alert('Privacy Policy — content to be added.');return false;" style="margin-right:1rem;">Privacy Policy</a>
+        <a href="#" onclick="alert('Site content is for general information only and does not constitute legal advice.');return false;">Disclaimer</a>
+      </span>
+    </div>
+  </div>
+</footer>
+
+
+<!-- ===== ARTICLES DATA & SCRIPTS ===== -->
+<script>
+const articles = [
+  {
+    tag: "Banking & Finance",
+    title: "How to Write a Formal Bank Letter in Nigeria",
+    meta: "December 2024 · 5 min read · By Bar. Anekwe Ngozie",
+    content: `
+      <p>Banks in Nigeria receive dozens of letters every day. Most are ignored — not because the request is unreasonable, but because the letter fails at the first impression. Whether you are writing to request a loan, dispute a transaction, seek account information, or obtain a reference, the format and tone of your letter determines how seriously it will be treated.</p>
+
+      <h2>The Core Structure</h2>
+      <p>A bank letter in Nigeria must follow a formal business letter format. There is no room for informality, sentimentality, or vagueness.</p>
+      <ol>
+        <li><strong>Your Address and Date:</strong> Top right or left depending on convention. Always include the full date — day, month, year.</li>
+        <li><strong>The Bank's Address:</strong> The branch manager's name (if known), the branch name, and the full address. Write "The Branch Manager" if you do not know the name.</li>
+        <li><strong>Subject Line:</strong> Bold, specific, and above the salutation. Example: <em>RE: REQUEST FOR ACCOUNT STATEMENT — ACCOUNT NO. XXXXXXXXXX</em>. The subject line is not optional. It tells the reader exactly what the letter is about before they read a word of the body.</li>
+        <li><strong>Salutation:</strong> "Dear Sir/Madam" or "Dear Mr./Mrs. [Name]" if you know the manager's name.</li>
+        <li><strong>Body:</strong> Three clear paragraphs — Introduction and context; the specific request; how and when you expect to be responded to.</li>
+        <li><strong>Closing:</strong> "Yours faithfully" (when you address the letter to "Sir/Madam") or "Yours sincerely" (when you use a name). Then your full name, signature, account number, and contact details.</li>
+      </ol>
+
+      <h2>Language and Tone</h2>
+      <p>Use formal, declarative language. Avoid contractions (write "I am" not "I'm"), avoid emotional language ("I am very disappointed and frustrated..."), and avoid excessive pleading. State your facts, make your request, and indicate what you expect.</p>
+      <blockquote>Banks respond to clarity. A well-structured letter says: I know what I want, I know my rights, and I know how to communicate. That alone commands attention.</blockquote>
+
+      <h2>Common Bank Letters and Their Specific Tips</h2>
+      <h3>Loan Application Letter</h3>
+      <p>State the amount requested, the purpose (clearly and honestly), the repayment plan, and any collateral you are offering. Attach supporting documents — payslips, business records, guarantor letters — before submitting. A loan letter without supporting documents is almost always rejected or deprioritised.</p>
+
+      <h3>Transaction Dispute Letter</h3>
+      <p>Include the transaction date, amount, reference number, and a clear description of what went wrong. Request a specific action — reversal, investigation, written response — and set a timeframe: "I expect a written response within 7 working days." Keep a copy. If the bank does not respond, this copy becomes evidence.</p>
+
+      <h3>Account Reference / Confirmation Letter Request</h3>
+      <p>State the purpose of the reference (for employment, tenancy, visa, etc.), the name and address of the requesting party, and the information you need the bank to confirm. Banks have standard formats for this — your letter simply initiates the process.</p>
+
+      <h2>Before You Send</h2>
+      <ul>
+        <li>Read the letter aloud — if any sentence is unclear when spoken, rewrite it.</li>
+        <li>Check the account number, names, and amounts against your records.</li>
+        <li>Make at least two copies — one for the bank, one for yourself with a receipt stamp if possible.</li>
+        <li>If the matter is urgent, consider delivering by hand and requesting a receipt.</li>
+      </ul>
+      <p>A well-written bank letter is a record. It protects you as much as it communicates your request. Treat it accordingly.</p>
+    `
+  },
+  {
+    tag: "Professional Correspondence",
+    title: "Addressing Persons of Authority the Right Way",
+    meta: "November 2024 · 4 min read · By Bar. Anekwe Ngozie",
+    content: `
+      <p>In formal Nigerian correspondence, how you address someone carries real weight. Getting it wrong signals either ignorance or disrespect — neither of which helps your cause. Getting it right opens doors and establishes you as someone who understands the rules.</p>
+
+      <h2>The Basic Principle</h2>
+      <p>Every formal address has two parts: the salutation (how you greet them in the letter) and the address block (how you write their title and name at the top). Both must be correct.</p>
+
+      <h2>Government Officials</h2>
+      <p><strong>President of the Federal Republic:</strong> Address block — "His Excellency, President [Full Name], President of the Federal Republic of Nigeria." Salutation — "Your Excellency."</p>
+      <p><strong>State Governors:</strong> "His Excellency, [Full Name], Governor of [State] State." Salutation — "Your Excellency."</p>
+      <p><strong>Ministers and Commissioners:</strong> "The Honourable Minister of [Ministry], [Full Name]." Salutation — "Honourable Minister" or "Dear Minister [Surname]."</p>
+      <p><strong>Members of the National Assembly:</strong> "Distinguished Senator [Full Name]" (for senators) or "Honourable [Full Name]" (for House members). Salutation mirrors this.</p>
+      <p><strong>Local Government Chairmen:</strong> "The Chairman, [Name] Local Government Area." Salutation — "Dear Chairman" or "Dear Your Worship" (for those styled as such in certain states).</p>
+
+      <h2>Judicial Officers</h2>
+      <p><strong>Chief Justice of Nigeria:</strong> "The Honourable, the Chief Justice of Nigeria, [Full Name] CJN." Salutation — "My Lord" (in court) or "Dear Chief Justice" (in correspondence).</p>
+      <p><strong>Justices of the Supreme Court and Court of Appeal:</strong> "Honourable Justice [Full Name] JSC/JCA." Salutation — "My Lord" or "Dear Justice [Surname]."</p>
+      <p><strong>High Court Judges:</strong> "Honourable Justice [Full Name]." Salutation — "My Lord/My Lady."</p>
+      <p><strong>Magistrates:</strong> "His/Her Worship, [Full Name]." Salutation — "Your Worship."</p>
+      <blockquote>In correspondence with judicial officers, the word "My Lord" is never optional in formal legal contexts. It is not merely polite — it is required protocol.</blockquote>
+
+      <h2>Traditional and Religious Leaders</h2>
+      <p><strong>Obi, Eze, Emir, Oba, Alafin (and similar traditional rulers):</strong> Use the full traditional title — "His Royal Majesty, the Obi of Onitsha, [Name]." Salutation — "Your Royal Majesty."</p>
+      <p><strong>Chiefs:</strong> "His Royal Highness, Chief [Name]." Salutation — "Your Royal Highness."</p>
+      <p><strong>Bishops, Archbishops:</strong> "His Grace, the Archbishop of [Diocese]" or "The Right Reverend Bishop [Name]." Salutation — "Your Grace" or "Your Lordship" accordingly.</p>
+
+      <h2>Professional Titles</h2>
+      <p>Never omit earned titles. A medical doctor is addressed as "Dr. [Name]" — not "Mr." A lawyer (Barrister) is "Barr. [Name]" or "Bar. [Name]." Engineers use "Engr. [Name]." Professors use "Prof. [Name]." These distinctions matter to the recipients.</p>
+
+      <h2>A Practical Rule</h2>
+      <p>When in doubt, use the higher title rather than the lower one. Calling a Commissioner "Honourable" when they prefer "Commissioner" is a minor error. Calling a Senator "Mr." is a significant one. When writing to someone whose exact title you are unsure of, a brief research effort — or a call to their office — is worth more than the embarrassment of error.</p>
+    `
+  },
+  {
+    tag: "Legal Process",
+    title: "Making a Legal Inquiry: A Step-by-Step Guide",
+    meta: "October 2024 · 6 min read · By Bar. Anekwe Ngozie",
+    content: `
+      <p>There are times when you need information from a company, institution, or government body — and asking informally simply does not work. A formal legal inquiry puts your request on record, creates an obligation to respond, and signals that you are prepared to take further steps if necessary. Knowing how to make one properly is a skill that protects you.</p>
+
+      <h2>What Is a Legal Inquiry?</h2>
+      <p>A legal inquiry is a formal, written request for information, clarification, or documentation — made in a manner that creates a paper trail. It is distinct from a casual question or a customer service complaint. When properly framed, it puts the recipient on notice that you are aware of your rights and prepared to enforce them.</p>
+
+      <h2>When Should You Make One?</h2>
+      <ul>
+        <li>When you have been denied information you believe you are legally entitled to.</li>
+        <li>When a company or institution has made a decision affecting you and has not explained their basis for it.</li>
+        <li>When you need documents to pursue a legal claim — contract copies, account statements, correspondence records.</li>
+        <li>When informal requests have been ignored more than once.</li>
+        <li>When you intend to file a complaint, pursue litigation, or escalate to a regulatory body.</li>
+      </ul>
+
+      <h2>Step 1: Identify the Correct Recipient</h2>
+      <p>Address your inquiry to the most senior responsible officer — the Managing Director, Company Secretary, Registrar, or Permanent Secretary, depending on the organisation. Addressing it to a junior staff member creates an easy excuse for non-response: "it was not received at the right level."</p>
+
+      <h2>Step 2: State Your Legal Basis (Where Applicable)</h2>
+      <p>If you have a legal right to the information — under a contract, the Freedom of Information Act 2011, the Companies and Allied Matters Act, or any other legislation — cite it. Example: "Pursuant to the Freedom of Information Act 2011, I hereby formally request access to the following records..."</p>
+      <p>Not every inquiry requires a statutory basis, but citing one where it exists dramatically strengthens your position and the organisation's obligation to respond.</p>
+
+      <h2>Step 3: Be Specific</h2>
+      <p>Vague inquiries invite vague — or no — responses. Specify exactly what information or documents you are requesting. Include dates, reference numbers, account numbers, contract numbers, or any identifier that narrows down the request.</p>
+      <blockquote>The more precise the inquiry, the harder it is to be legitimately ignored. Ambiguity is the enemy of accountability.</blockquote>
+
+      <h2>Step 4: Set a Response Deadline</h2>
+      <p>Always state a specific deadline: "I expect a written response within 14 working days of receiving this letter." Under the Freedom of Information Act 2011, public institutions have 7 days to respond to FOI requests. For private entities, 14 working days is a reasonable and customary expectation.</p>
+
+      <h2>Step 5: State Your Intended Next Steps</h2>
+      <p>You do not need to be aggressive, but you should be clear. "If I do not receive a satisfactory response by [date], I reserve the right to escalate this matter to [the relevant regulatory body / the courts / my legal counsel]." This sentence alone often prompts a response that weeks of informal asking could not secure.</p>
+
+      <h2>Step 6: Deliver and Document</h2>
+      <p>Send the letter by a traceable method — courier with delivery confirmation, registered post, or email with a read receipt. If delivered by hand, request a stamp and signature on your copy. Your copy with proof of delivery is your evidence.</p>
+
+      <h2>What If They Still Do Not Respond?</h2>
+      <p>If a public institution ignores an FOI request, you may file a complaint with the Attorney General of the Federation or the relevant state Attorney General. For private entities, non-response may become evidence of bad faith in subsequent legal proceedings. This is precisely why the paper trail matters.</p>
+      <p>Before escalating, consult a legal practitioner. What began as an inquiry can become the foundation of a successful legal claim — but only if it was properly documented from the start.</p>
+    `
+  },
+  {
+    tag: "Legal Notices",
+    title: "Understanding and Issuing a Legal Notice in Nigeria",
+    meta: "September 2024 · 5 min read · By Bar. Anekwe Ngozie",
+    content: `
+      <p>A legal notice is often the first formal move in a legal dispute. It is a written document that formally informs another party of your intention to take legal action if a particular issue is not resolved within a specified period. Getting this step right matters — both procedurally and strategically.</p>
+
+      <h2>What a Legal Notice Actually Does</h2>
+      <p>A properly issued legal notice accomplishes several things at once. It documents that you gave the other party an opportunity to resolve the matter amicably. It creates a clear record of the timeline. In many contract and property matters, Nigerian law requires that a notice be issued before legal proceedings can be commenced — failure to issue one can render a subsequent lawsuit premature and dismissible.</p>
+      <p>Perhaps most practically: a well-drafted legal notice from a lawyer often resolves disputes without any court involvement at all. The arrival of formal legal correspondence signals that the matter has moved beyond the informal stage — and many recipients act accordingly.</p>
+
+      <h2>Common Situations That Require a Legal Notice</h2>
+      <ul>
+        <li>Breach of contract — the other party has failed to perform their obligations.</li>
+        <li>Unpaid debts — a debtor has defaulted despite informal demands.</li>
+        <li>Landlord-tenant disputes — termination of tenancy, unpaid rent, or recovery of premises.</li>
+        <li>Employment termination — notice of wrongful dismissal claim before filing at the labour tribunal.</li>
+        <li>Defamation — notifying the publisher or individual before filing suit.</li>
+        <li>Property encroachment — formally requiring someone to cease or desist from trespassing.</li>
+      </ul>
+
+      <h2>What a Legal Notice Must Contain</h2>
+      <ol>
+        <li><strong>Identity of the parties:</strong> Full legal names and addresses of both the sender and the recipient.</li>
+        <li><strong>The facts:</strong> A clear, chronological statement of the relevant facts — what was agreed, what went wrong, and when.</li>
+        <li><strong>The legal basis:</strong> The section of the contract breached, or the legal right infringed.</li>
+        <li><strong>The demand:</strong> What specific action you require — payment of a sum, vacation of premises, cessation of conduct, etc.</li>
+        <li><strong>The deadline:</strong> A clear number of days within which the demand must be met. Common periods are 7, 14, or 30 days depending on the matter.</li>
+        <li><strong>The consequence:</strong> What action you will take if the demand is not met — typically, commencement of legal proceedings.</li>
+      </ol>
+
+      <h2>Should a Lawyer Issue It?</h2>
+      <p>A legal notice issued by a lawyer carries significantly more weight than one issued personally. It signals that you have retained counsel, that the matter is being actively prosecuted, and that the consequences of non-compliance are real. For any matter involving a substantial sum, a property, or an employment claim, the cost of having a lawyer draft and issue the notice is almost always recovered many times over in the speed and quality of the resolution.</p>
+      <blockquote>Never underestimate the power of a properly letterheaded legal notice. It is often the most efficient legal tool available.</blockquote>
+
+      <h2>If You Receive a Legal Notice</h2>
+      <p>Do not ignore it. Do not panic. Read it carefully and note the deadline. The notice period exists specifically to give you an opportunity to respond — use it. Consult a lawyer before responding or making any payment, admission, or promise. What you say in response to a legal notice becomes part of the legal record.</p>
+    `
+  },
+  {
+    tag: "Know Your Rights",
+    title: "What to Do When You Are Served Legal Papers",
+    meta: "August 2024 · 5 min read · By Bar. Anekwe Ngozie",
+    content: `
+      <p>Being served court documents can feel alarming. The formal language, the court seals, the short timelines — it can all feel designed to overwhelm you. It is not. Court process is a system with clear rules, and understanding those rules immediately gives you back a sense of control. Here is exactly what to do.</p>
+
+      <h2>Step 1: Do Not Panic — But Do Not Delay</h2>
+      <p>Take a breath. Being served legal papers does not mean you have lost anything. It means a process has been initiated against you. You have rights, you have time (though not unlimited time), and you have options. What you must not do is ignore the documents or assume they will "go away." They will not — and ignoring them makes everything worse, often resulting in a judgment being entered against you by default.</p>
+
+      <h2>Step 2: Read Everything Carefully</h2>
+      <p>Before calling anyone, read every document you have been given. Identify:</p>
+      <ul>
+        <li><strong>What court issued the documents</strong> — Magistrate Court, High Court, Federal High Court, etc.</li>
+        <li><strong>Who is suing you</strong> — the Claimant or Plaintiff.</li>
+        <li><strong>What they are claiming</strong> — money, property, an injunction, or something else.</li>
+        <li><strong>The deadline to file a response</strong> — this is critical and is usually stated on the summons or writ. Common timelines are 8, 14, or 30 days depending on court and case type.</li>
+        <li><strong>The date of any court hearing</strong> — note it immediately.</li>
+      </ul>
+
+      <h2>Step 3: Contact a Lawyer — Today</h2>
+      <p>Not tomorrow. Today. Court deadlines are strict. Missing the deadline to file a defence means the other party may be entitled to request a default judgment against you — meaning they win without you ever arguing your case. An experienced lawyer can assess the strength of the claim against you, advise on your best defence, and ensure all procedural requirements are met.</p>
+      <blockquote>A missed court deadline can cost you the entire case, regardless of the merits. Time is not on your side — use it wisely.</blockquote>
+
+      <h2>Step 4: Gather Your Documents</h2>
+      <p>Locate every document related to the matter — contracts, receipts, correspondence (including WhatsApp messages and emails), photographs, bank statements, anything potentially relevant. Bring everything to your lawyer. What seems irrelevant to you may be crucial to your defence. Organise them chronologically if possible.</p>
+
+      <h2>Common Types of Legal Papers and What They Mean</h2>
+      <p><strong>Writ of Summons:</strong> Initiates a lawsuit against you. You must file a memorandum of appearance (and often a defence) within the stated time.</p>
+      <p><strong>Originating Summons:</strong> Similar to a writ but used for specific applications — often property or probate matters. Requires you to appear before the court on the stated date.</p>
+      <p><strong>Motion or Application:</strong> A request made within an existing case. You may need to file a counter-affidavit or simply appear in court to oppose it.</p>
+      <p><strong>Judgment / Garnishee Order:</strong> If you receive one of these, a judgment has already been entered against you. Immediate legal advice is critical — there are still remedies available but time is even shorter.</p>
+
+      <h2>What You Should Never Do</h2>
+      <ul>
+        <li>Never ignore the documents.</li>
+        <li>Never approach the other party directly to "sort it out" without legal advice — anything you say or agree to can be used against you.</li>
+        <li>Never sign any document presented by the other party's lawyer without your own lawyer reviewing it.</li>
+        <li>Never assume a matter is too small to need a lawyer.</li>
+      </ul>
+
+      <p>The Nigerian legal system, for all its challenges, gives defendants real opportunities to contest claims. The key to using those opportunities is acting promptly, staying informed, and getting the right legal representation.</p>
+    `
+  }
+];
+
+function showPage(name) {
+  document.querySelectorAll('.page').forEach(p => p.classList.remove('active'));
+  const el = document.getElementById('page-' + name);
+  if (el) {
+    el.classList.add('active');
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  }
+  // Update nav active state
+  document.querySelectorAll('nav a').forEach(a => {
+    a.classList.toggle('active', a.dataset.page === name);
+  });
+  // Append footer to each page (it lives outside)
+  const footer = document.getElementById('main-footer');
+  document.body.appendChild(footer);
+}
+
+function openArticle(index) {
+  const a = articles[index];
+  document.getElementById('article-tag').textContent = a.tag;
+  document.getElementById('article-title').textContent = a.title;
+  document.getElementById('article-meta').textContent = a.meta;
+  document.getElementById('article-content').innerHTML = a.content;
+  showPage('article');
+}
+
+function toggleMobile() {
+  const nav = document.getElementById('mobileNav');
+  const btn = document.getElementById('hamburger');
+  nav.classList.toggle('open');
+  btn.classList.toggle('open');
+}
+
+function closeMobile() {
+  document.getElementById('mobileNav').classList.remove('open');
+  document.getElementById('hamburger').classList.remove('open');
+}
+
+function subscribeNewsletter() {
+  alert('Thank you for subscribing! You will receive The Anekwe Brief every Sunday morning.');
+}
+
+function submitForm() {
+  alert('Thank you for your inquiry. Bar. Anekwe Ngozie will respond within 24 business hours. All communications are strictly confidential.');
+}
+</script>
+
+</body>
+</html>
